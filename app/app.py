@@ -36,8 +36,10 @@ def index():
 
     conn.commit()
     conn.close()
+    ip = request.remote_addr
+    register_attempt("anonymous", ip)
+    return {"status": "ok"}
 
-    return "OK", 200
 
 @app.route("/login-attempt", methods=["POST"])
 def login_attempt():
