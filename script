@@ -1,0 +1,10 @@
+!login-tracker/
+mkdir app/
+cd app 
+cat "" >> app.py
+cat "" >>db.py
+cat "" >> models.sql
+cd ..
+cat "" >> Dockerfile
+cat "" >>docker-compose.yml
+cat "" >>requirements.txt
