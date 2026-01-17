@@ -4,9 +4,8 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-@app.before_first_request
-def setup():
-    init_db()
+init_db()
+
 
 @app.route("/login-attempt", methods=["POST"])
 def login_attempt():
