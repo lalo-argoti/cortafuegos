@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify,  render_template
 from db import get_db, init_db
 from datetime import datetime
 from werkzeug.middleware.proxy_fix import ProxyFix
@@ -41,7 +41,8 @@ def index():
     conn.commit()
     conn.close()
     ip = request.remote_addr
-    return {"status": "ok"}
+    return render_template("nuevo.html")
+
 
 
 @app.route("/login-attempt", methods=["POST"])
