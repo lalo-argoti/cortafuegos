@@ -1,8 +1,12 @@
 from flask import Flask, request, jsonify
 from db import get_db, init_db
 from datetime import datetime
+from werkzeug.middleware.proxy_fix import ProxyFix
+
 
 app = Flask(__name__)
+
+app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1)
 
 init_db()
 
