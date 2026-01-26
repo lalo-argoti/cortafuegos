@@ -1,0 +1,181 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pukuri'Na | Soluciones Inteligentes de Datos</title>
+  <style>
+    /* ---------- ESTILOS BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", system-ui, sans-serif;
+    }
+
+    body {
+      color: #222;
+      background-color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    header .logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #0078ff;
+      text-decoration: none;
+    }
+
+    header .btn-login {
+      background: #0078ff;
+      color: #fff;
+      padding: 0.6rem 1.5rem;
+      border-radius: 2rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    header .btn-login:hover {
+      background: #005fd1;
+    }
+
+    /* ---------- SECCIÓN HERO ---------- */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(to bottom right, rgba(0, 120, 255, 0.1), rgba(0,0,0,0.6)),
+                  url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+
+    .hero .cta {
+      background-color: #0078ff;
+      color: #fff;
+      padding: 0.9rem 2rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .hero .cta:hover {
+      background-color: #005fd1;
+    }
+
+    /* ---------- SECCIÓN VALOR ---------- */
+    .section {
+      padding: 5rem 1rem;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #111;
+    }
+
+    .section p {
+      color: #555;
+      line-height: 1.6;
+      font-size: 1.05rem;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #eee;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 1rem; }
+    }
+    /* Imagen responsiva */
+.section img {
+  width: 100%;
+  height: auto;
+  max-width: 900px;   /* opcional para que no sea demasiado grande en PC */
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto visual al pasar el mouse */
+.section img:hover {
+  transform: scale(1.02);
+}
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="/" class="logo">Pukuri'Na</a>
+    <a href="/login" class="btn-login">Iniciar sesión</a>
+  </header>
+
+  <section class="hero">
+    <h1>Gestión Inteligente de Datos Empresariales</h1>
+    <p>Conectamos tus sistemas, analizamos tus procesos y transformamos tus datos en decisiones estratégicas.</p>
+    <a href="/login" class="cta">Acceder a la plataforma</a>
+  </section>
+
+  <section class="section">
+    <h2>Soluciones de alto impacto</h2>
+    <p>
+      Integra tus fuentes de información, automatiza reportes y aprovecha el poder de la analítica avanzada.
+      Nuestra plataforma se adapta a los entornos de negocio más exigentes: financiero, educativo, logístico o gubernamental.
+    </p>
+  </section>
+  
+    <section class="section">
+    <h2>Promoción</h2>
+    <p>
+      <a href="/oferta"> <img src="static/images/venta.png" alt="Adquiere nuestros servicios">
+ </a>
+
+    </p>
+  </section>
+  <footer>
+    © 2025 Carlos Argoti. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
