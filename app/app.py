@@ -41,7 +41,6 @@ def index():
     conn.commit()
     conn.close()
     ip = request.remote_addr
-    register_attempt("anonymous", ip)
     return {"status": "ok"}
 
 
